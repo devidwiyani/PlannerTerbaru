@@ -37,7 +37,7 @@ import java.util.Map;
 public class RegisterActivity extends AppCompatActivity {
 
     int seekBarValue;
-    TextView alertNama, alertEmail, alertUmur, alertGender, alertStatus, umur1, alertGreeting;
+    TextView alertNama, alertUmur, alertGender, alertStatus, umur1, alertGreeting;
     EditText regUsername, regPassword, regName;
     SeekBar seekBar;
     RadioGroup groupRadio;
@@ -97,7 +97,6 @@ public class RegisterActivity extends AppCompatActivity {
 
                     alertGreeting = view.findViewById(R.id.alert_greeting);
                     alertNama = view.findViewById(R.id.alert_nama);
-                    alertEmail = view.findViewById(R.id.alert_email);
                     alertUmur = view.findViewById(R.id.alert_umur);
                     alertGender = view.findViewById(R.id.alert_gender);
                     alertStatus = view.findViewById(R.id.alert_status);
