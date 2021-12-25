@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    app:cardCornerRadius="20dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/alert_greeting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:text="Nama"
+                android:textColor="@color/pink"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/title_nama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/alert_greeting"
+                android:text="Nama      :  "
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="@color/pink"/>
+
+            <TextView
+                android:id="@+id/alert_nama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/alert_greeting"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/title_email"
+                android:text=""
+                android:textColor="@color/pink"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_toEndOf="@id/title_email" />
+
+
+            <TextView
+                android:id="@+id/title_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/alert_nama"
+                android:text="Email       :  "
+                android:textStyle="bold"
+                android:textColor="@color/pink"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/alert_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/alert_nama"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/title_email"
+                android:text=""
+                android:textColor="@color/pink"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_toEndOf="@id/title_email" />
+
+            <TextView
+                android:id="@+id/title_umur"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title_email"
+                android:layout_marginTop="10dp"
+                android:text="Umur       :  "
+                android:textStyle="bold"
+                android:textColor="@color/pink"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/alert_umur"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/alert_email"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/title_umur"
+                android:text=""
+                android:textColor="@color/pink"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_toEndOf="@id/title_umur" />
+
+            <TextView
+                android:id="@+id/title_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title_umur"
+                android:layout_marginTop="10dp"
+                android:text="Gender    :  "
+                android:textStyle="bold"
+                android:textColor="@color/pink"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/alert_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/alert_umur"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/title_gender"
+                android:text=""
+                android:textColor="@color/pink"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_toEndOf="@id/title_gender" />
+
+            <TextView
+                android:id="@+id/alert_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/alert_gender"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:text=""
+                android:textColor="@color/pink"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/alert_status"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="@color/blue"
+                android:text="OK" />
+
+        </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

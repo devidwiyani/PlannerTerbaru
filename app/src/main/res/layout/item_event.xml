@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="10dp"
+        android:layout_margin="10dp"
+        android:padding="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/event_plan_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:text="Kuliah"
+                android:textColor="@color/blue"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/event_plan_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/event_plan_name"
+                android:layout_marginStart="30dp"
+                android:text="Mangsi"
+                android:textColor="@color/blue"
+                android:layout_marginTop="10dp"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/event_plan_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/event_plan_location"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:text="18 Desember 2021"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/event_plan_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/event_plan_location"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/event_plan_date"
+                android:text="08.30"
+                android:textSize="15dp" />
+
+
+            <ImageButton
+                android:id="@+id/btn_delete"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:backgroundTint="@color/white"
+                android:src="@drawable/ic_delete_blue" />
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>

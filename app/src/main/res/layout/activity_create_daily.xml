@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:gravity="center"
+    tools:context=".CreateDailyActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CREATE DAILY PLAN"
+        android:layout_gravity="center"
+        android:textColor="@color/pink"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="30dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxStrokeColor="@color/pink"
+        app:counterTextColor="@color/pink"
+        android:layout_marginTop="10dp">
+        <EditText
+            android:id="@+id/input_daily_plan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Your Plan"
+            android:inputType="text"
+            android:textSize="15sp"
+            android:drawableStart="@drawable/ic_name"
+            android:drawablePadding="10dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <EditText
+        android:id="@+id/input_start_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/frame_time"
+        android:drawableStart="@drawable/ic_schedule"
+        android:drawablePadding="10dp"
+        android:padding="15dp"
+        android:ems="10"
+        android:hint="Start Time"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/input_end_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/frame_time"
+        android:drawableStart="@drawable/ic_schedule"
+        android:drawablePadding="10dp"
+        android:padding="15dp"
+        android:ems="10"
+        android:hint="End Time"
+        android:inputType="time"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/btn_submit_daily"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/pink"
+        android:layout_marginTop="20dp"
+        app:cornerRadius="15dp"
+        android:text="SUBMIT"/>
+
+    <Button
+        android:id="@+id/btn_repeat_daily"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/beige"
+        android:layout_marginTop="10dp"
+        app:cornerRadius="15dp"
+        android:text="Repeat Daily"/>
+
+</LinearLayout>
